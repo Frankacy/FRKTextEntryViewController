@@ -1,0 +1,14 @@
+PODS:
+  - FRKTextEntryViewController (0.1.0)
+
+DEPENDENCIES:
+  - FRKTextEntryViewController (from `../`)
+
+EXTERNAL SOURCES:
+  FRKTextEntryViewController:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  FRKTextEntryViewController: 667dac726dccbd355d0b36734d754804a29aff40
+
+COCOAPODS: 0.36.3
