@@ -1,11 +1,10 @@
 source 'https://github.com/CocoaPods/Specs.git'
 
 target 'FRKTextEntryViewController', :exclusive => true do
-  pod "FRKTextEntryViewController", :path => "../"
+  pod "FRKTextEntryViewController", :path => "git@github.com:Frankacy/FRKTextEntryViewController.git"
+  pod "Masonry"
 end
 
 target 'Tests', :exclusive => true do
-  pod "FRKTextEntryViewController", :path => "../"
-
-  
+  pod "FRKTextEntryViewController", :path => "git@github.com:Frankacy/FRKTextEntryViewController.git"
 end

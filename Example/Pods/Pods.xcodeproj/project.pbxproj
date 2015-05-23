@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		2AC3FAADFF69F4251A035173 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FCDE606FCEFB4B439B4AE15 /* Foundation.framework */; };
+		41F7039E1B10FA7D0009A38B /* FRKTextEntryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41F7039D1B10FA7D0009A38B /* FRKTextEntryViewController.m */; };
+		41F703A41B11050C0009A38B /* FRKGenericTextEntryView.m in Sources */ = {isa = PBXBuildFile; fileRef = 41F703A31B11050C0009A38B /* FRKGenericTextEntryView.m */; };
+		41F703A81B11077D0009A38B /* FRKLine.m in Sources */ = {isa = PBXBuildFile; fileRef = 41F703A71B11077D0009A38B /* FRKLine.m */; };
 		A2775EC7108C4E5CEFB513F5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FCDE606FCEFB4B439B4AE15 /* Foundation.framework */; };
 		B3C59AD6537497E2A5BB331C /* Pods-Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0579A205ADF255D4D0B4E75D /* Pods-Tests-dummy.m */; };
 		F24797ED553E8DFB42636924 /* Pods-FRKTextEntryViewController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 341A116F095A7E498F3AEB7D /* Pods-FRKTextEntryViewController-dummy.m */; };
@@ -36,6 +39,13 @@
 		1C2662D806790A65E3D3F04F /* Pods-FRKTextEntryViewController.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FRKTextEntryViewController.debug.xcconfig"; sourceTree = "<group>"; };
 		2854B5F91BF35BD1D3C40622 /* Pods-Tests-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Tests-environment.h"; sourceTree = "<group>"; };
 		341A116F095A7E498F3AEB7D /* Pods-FRKTextEntryViewController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-FRKTextEntryViewController-dummy.m"; sourceTree = "<group>"; };
+		41F7039C1B10FA7D0009A38B /* FRKTextEntryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FRKTextEntryViewController.h; sourceTree = "<group>"; };
+		41F7039D1B10FA7D0009A38B /* FRKTextEntryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FRKTextEntryViewController.m; sourceTree = "<group>"; };
+		41F703A11B10FD990009A38B /* FRKTextEntryView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FRKTextEntryView.h; sourceTree = "<group>"; };
+		41F703A21B11050C0009A38B /* FRKGenericTextEntryView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FRKGenericTextEntryView.h; sourceTree = "<group>"; };
+		41F703A31B11050C0009A38B /* FRKGenericTextEntryView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FRKGenericTextEntryView.m; sourceTree = "<group>"; };
+		41F703A61B11077D0009A38B /* FRKLine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FRKLine.h; sourceTree = "<group>"; };
+		41F703A71B11077D0009A38B /* FRKLine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FRKLine.m; sourceTree = "<group>"; };
 		44733254228203187E7927A0 /* Pods-Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		4FCDE606FCEFB4B439B4AE15 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		53F03824576762528808B5D3 /* Pods-FRKTextEntryViewController-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-FRKTextEntryViewController-resources.sh"; sourceTree = "<group>"; };
@@ -98,6 +108,9 @@
 		2D1F424D6363F93E8CA00485 /* FRKTextEntryViewController */ = {
 			isa = PBXGroup;
 			children = (
+				41F703A01B10FAA40009A38B /* FRKTextEntryView */,
+				41F7039C1B10FA7D0009A38B /* FRKTextEntryViewController.h */,
+				41F7039D1B10FA7D0009A38B /* FRKTextEntryViewController.m */,
 			);
 			name = FRKTextEntryViewController;
 			path = ../..;
@@ -123,6 +136,26 @@
 				7D23F645916BA2083CAD4E32 /* libPods-Tests.a */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		41F703A01B10FAA40009A38B /* FRKTextEntryView */ = {
+			isa = PBXGroup;
+			children = (
+				41F703A51B11074F0009A38B /* FRKGenericTextEntryView */,
+				41F703A11B10FD990009A38B /* FRKTextEntryView.h */,
+			);
+			name = FRKTextEntryView;
+			sourceTree = "<group>";
+		};
+		41F703A51B11074F0009A38B /* FRKGenericTextEntryView */ = {
+			isa = PBXGroup;
+			children = (
+				41F703A21B11050C0009A38B /* FRKGenericTextEntryView.h */,
+				41F703A31B11050C0009A38B /* FRKGenericTextEntryView.m */,
+				41F703A61B11077D0009A38B /* FRKLine.h */,
+				41F703A71B11077D0009A38B /* FRKLine.m */,
+			);
+			name = FRKGenericTextEntryView;
 			sourceTree = "<group>";
 		};
 		4947A1DFD39EFFCE0F7B5550 /* Targets Support Files */ = {
@@ -316,7 +349,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				41F7039E1B10FA7D0009A38B /* FRKTextEntryViewController.m in Sources */,
 				F24797ED553E8DFB42636924 /* Pods-FRKTextEntryViewController-dummy.m in Sources */,
+				41F703A41B11050C0009A38B /* FRKGenericTextEntryView.m in Sources */,
+				41F703A81B11077D0009A38B /* FRKLine.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
